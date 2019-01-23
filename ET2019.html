@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Slate is a responsive theme for GitHub Pages" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+
+    <title>Eye-Tracking Analysis Workshop 2019</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">Eye-Tracking Analysis Workshop</h1>
+          <!-- <h2 id="project_tagline">LCDL Github Homepage</h2> -->
+		  <p> <a href="http://www.danmirman.org/"><img alt="logo" src="images/lab_logo_danmirman.png" /></a></p>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Overview</h1>
+        <p>These are slides from a two-day Eye-Tracking Analysis workshop given at San Diego State University for the SDSU/UCSD Joint Doctoral Program in Language and Communication Sciences in January 2019. The purpose of the workshop was to provide a hands-on introduction to preprocessing eye-tracking data and analyzing those data using growth curve analysis (GCA). The focus was on eye-tracking data, but GCA is broadly applicable to longitudinal or time course data and many of the preprocessing steps apply to other kinds of physiological measures (such as EEG). Day 1 focused on general data "wrangling" and specifically preprocessing eye-tracking data. Day 2 focused on growth curve analysis. The workshop was conducted in R (and RStudio) using the following packages:</p>
+		<ul>
+		<li><a href="http://www.tidyverse.org/">tidyverse</a> packages for reading, managing, and graphing data.</li>
+		<li>lme4: for fitting growth curve models.</li>
+		<li><a href="http://github.com/dmirman/gazer">gazeR</a>: functions for preprocessing eye-tracking data and example data sets.</li>
+		</ul>
+
+        <h1>Workshop Slides</h1>
+		<table>
+			<tr>
+				<td>Day 1, Part 1</td><td><a href="./ET2019/d1p1_DataWrangling.html">Data wrangling</a></td>
+			</tr>
+			<tr>
+				<td>Day 1, Part 2</td><td><a href="./ET2019/d1p2_PreProcessingEyeTrackingData.html">Pre-Processing Eye-Tracking</a></td>
+			</tr>
+			<tr>
+				<td>Day 2, Part 1</td><td><a href="./ET2019/d2p1_GCABasics.html">GCA Basics</a></td>
+			</tr>
+			<tr>
+				<td>Day 2, Part 2</td><td><a href="./ET2019/d2p2_NonLinearChange.html">Non-Linear Change, Within-Subject Effects</a></td>
+			</tr>
+			<tr>
+				<td>Day 2, Part 3</td><td><a href="./ET2019/d2p3_LogisticGCA.html">Logistic GCA</a></td>
+			</tr>
+			<tr>
+				<td>Day 2, Part 4</td><td><a href="./ET2019/d2p4_VisualizingPolynomials.html">Visualizing Higher-Order Polynomial Terms</a></td>
+			</tr>
+			<tr>
+				<td>Day 2, Part 5</td><td><a href="./ET2019/d2p5_IndividualDifferences.html">Quantifying and analyzing individual differences</a></td>
+			</tr>		
+		</table>
+		<a href="./ET2019/">Exercise solutions</a>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">This page was developed using the Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
