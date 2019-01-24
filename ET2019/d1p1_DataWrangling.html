@@ -458,7 +458,7 @@ dat</code></pre></div>
 </div>
 <div id="function-arguments" class="slide section level2">
 <h2>Function arguments</h2>
-<p><code>fun_name(arg1, arg2, ..., arg_def=0)</code></p>
+<p><code>fun_name &lt;- function(arg1, arg2, ..., arg_def=0){...}</code></p>
 <ul>
 <li>Try to make sure that everything the function needs will be provided in the input
 <ul>
@@ -469,6 +469,12 @@ dat</code></pre></div>
 </ul></li>
 <li><code>return</code> the result</li>
 </ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">addTwo &lt;-<span class="st"> </span><span class="cf">function</span>(x){
+  result &lt;-<span class="st"> </span>x<span class="op">+</span><span class="dv">2</span>
+  <span class="kw">return</span>(result)
+}
+<span class="kw">addTwo</span>(<span class="dv">10</span>)</code></pre></div>
+<pre><code>## [1] 12</code></pre>
 </div>
 <div id="exercise-fibonacci-function" class="slide section level2">
 <h2>Exercise: Fibonacci function</h2>
@@ -481,14 +487,14 @@ dat</code></pre></div>
 }
 fib[<span class="dv">1</span><span class="op">:</span><span class="dv">15</span>]</code></pre></div>
 <pre><code>##  [1]   1   1   2   3   5   8  13  21  34  55  89 144 233 377 610</code></pre>
-<p>Write a function that takes one argument (<code>n</code>) and produces the first <code>n</code> digits of the Fibonacci sequence.</p>
+<p>Write a function that takes one argument (<code>x</code>) and produces the first <code>x</code> digits of the Fibonacci sequence.</p>
 </div>
 <div id="exercise-solution-1" class="slide section level2">
 <h2>Exercise Solution</h2>
-<p>Write a function that takes one argument (<code>n</code>) and produces the first <code>n</code> digits of the Fibonacci sequence: <span class="math inline">\(F_n = F_{n-1} + F_{n-2}\)</span>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fib_fun &lt;-<span class="st"> </span><span class="cf">function</span>(n){
+<p>Write a function that takes one argument (<code>x</code>) and produces the first <code>x</code> digits of the Fibonacci sequence: <span class="math inline">\(F_n = F_{n-1} + F_{n-2}\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fib_fun &lt;-<span class="st"> </span><span class="cf">function</span>(x){
   fib &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>) 
-  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">3</span><span class="op">:</span>n){
+  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">3</span><span class="op">:</span>x){
     fib[i] &lt;-<span class="st"> </span>fib[i<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span><span class="st"> </span>fib[i<span class="op">-</span><span class="dv">2</span>]
   }
   <span class="kw">return</span>(fib)
